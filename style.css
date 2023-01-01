@@ -1,0 +1,70 @@
+@font-face {
+    font-family: AmaticSC;
+    src: url(fonts/AmaticSC-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: AmaticSC;
+    src: url(fonts/AmaticSC-Bold.ttf) format('truetype');
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: RobotoMono;
+    src: url(fonts/RobotoMono-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html.reset h1 {
+    margin: 0 !important;
+    overflow: hidden !important;
+}
+
+body {
+    background-color: black;
+    height: 100vh !important;
+}
+
+h1 {
+    font-family: AmaticSC;
+    font-weight: bold;
+    font-size: 150px;
+    text-align: center;
+    color: white;
+}
+
+.wrapper {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative !important;
+    top: 45% !important;
+    transform: translateY(-50%) !important;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 3px solid white;
+    background: white;
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: RobotoMono;
+    font-style: normal;
+    font-size: 100px;
+}
+
