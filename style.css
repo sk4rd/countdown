@@ -1,20 +1,23 @@
 @font-face {
-    font-family: AmaticSC;
-    src: url(fonts/AmaticSC-Regular.ttf) format('truetype');
+    font-family: 'Orbitron';
+    src: url('fonts/subset-Orbitron-Regular.woff2') format('woff2'),
+        url('fonts/subset-Orbitron-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: AmaticSC;
-    src: url(fonts/AmaticSC-Bold.ttf) format('truetype');
-    font-weight: bolder;
+    font-family: 'Amatic SC';
+    src: url('fonts/subset-AmaticSC-Bold.woff2') format('woff2'),
+        url('fonts/subset-AmaticSC-Bold.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: RobotoMono;
-    src: url(fonts/RobotoMono-Regular.ttf) format('truetype');
+    font-family: 'Amatic SC';
+    src: url('fonts/subset-AmaticSC-Regular.woff2') format('woff2'),
+        url('fonts/subset-AmaticSC-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -30,7 +33,7 @@ body {
 }
 
 h1 {
-    font-family: AmaticSC;
+    font-family: 'Amatic SC';
     font-weight: bold;
     font-size: 150px;
     text-align: center;
@@ -54,6 +57,18 @@ h1 {
     gap: 40px;
 }
 
+.container-text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-family: 'Amatic SC';
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+    gap: 30px;
+}
+
 .box {
     width: 200px;
     height: 200px;
@@ -63,8 +78,15 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: RobotoMono;
+    font-family: 'Orbitron';
     font-style: normal;
-    font-size: 100px;
+    font-size: 80px;
+    margin-bottom: 40px;
 }
 
+.subtext {
+    font-family: 'Amatic SC';
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+}
