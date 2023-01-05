@@ -57,36 +57,18 @@ h1 {
     gap: 40px;
 }
 
-.container-text {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    font-family: 'Amatic SC';
-    font-size: 40px;
-    font-weight: 800;
-    color: white;
-    gap: 30px;
-}
-
 .box {
-    width: 200px;
-    height: 200px;
-    border: 3px solid white;
+    width: 225px !important;
+    height: 150px !important;
     background: white;
     border-radius: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-family: 'Orbitron';
-    font-style: normal;
+    font-style: bold;
     font-size: 80px;
-    margin-bottom: 40px;
+    text-align: center;
+    padding: 50px 0px 50px 0px;
 }
 
-.subtext {
-    font-family: 'Amatic SC';
-    font-size: 40px;
-    font-weight: 800;
-    color: white;
+.box span:nth-of-type(2) {
+    font-size: 20px !important;
 }

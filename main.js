@@ -1,4 +1,4 @@
-var date = new Date("January 3, 2023 13:00:00").getTime();
+var date = new Date("January 4, 2023 16:20:00").getTime();
 
 var countdown = setInterval(function() {
     var currentDate = new Date().getTime();
@@ -12,4 +12,12 @@ var countdown = setInterval(function() {
     document.getElementById("hours").innerText = hours;
     document.getElementById("minutes").innerText = minutes;
     document.getElementById("seconds").innerText = seconds;
+
+    if (delta < 0) {
+        clearInterval(countdown);
+        document.getElementById("days").innerText = 0;
+        document.getElementById("hours").innerText = 0;
+        document.getElementById("minutes").innerText = 0;
+        document.getElementById("seconds").innerText = 0;
+    }
 }, 1000);
